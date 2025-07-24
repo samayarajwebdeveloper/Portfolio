@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ⌨️ Typewriting Effect
   // ========================
   const typedText = document.getElementById("typed-text");
-  const titles = ["Front-end Developer", "UI/UX Designer"];
+  const titles = ["Web Developer", "UI/UX Designer"];
   let titleIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
