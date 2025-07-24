@@ -9,17 +9,16 @@
   <title>Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/lucide@latest"></script>
   <!-- AOS Library for Scroll Animations -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;600&display=swap"
     rel="stylesheet">
-  
+
 
 
 </head>
 
-<body class="bg-gradient-to-tr from-gray-900 to-gray-800 text-white">
+<body class="bg-gradient-to-tr from-gray-900 to-gray-800 text-white ">
 
   <header class="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-md shadow-lg ">
     <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
@@ -34,20 +33,23 @@
         <a href="#projects" class="nav-link">Projects</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
-
       <!-- Mobile Hamburger -->
       <div class="md:hidden">
-        <button id="menu-toggle" class="text-3xl text-white">&#9776;</button>
+        <button id="menu-toggle" class="text-3xl text-white">
+          <i data-lucide="menu" class="w-8 h-8"></i>
+        </button>
       </div>
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden flex-col gap-4 px-6 pb-4">
+    <div id="mobile-menu"
+      class="hidden md:hidden flex-col bg-black/80 backdrop-blur-lg px-6 py-4 space-y-4 text-white text-lg">
       <a href="#home" class="nav-link block">Home</a>
       <a href="#about" class="nav-link block">About</a>
       <a href="#projects" class="nav-link block">Projects</a>
       <a href="#contact" class="nav-link block">Contact</a>
     </div>
+
   </header>
 
   <!-- Hero Section -->
@@ -55,7 +57,7 @@
     class="min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 px-6 py-20 bg-gradient-to-br from-gray-900 to-black text-white">
 
     <!-- Left Side -->
-    <div class="flex-1 text-center md:text-left space-y-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-col items-center justify-center gap-10">
       <!-- Heading -->
       <h1 class="home-animate opacity-0 delay-1 text-4xl md:text-4xl font-bold">
         Hi 👋, I'm <span class="text-white">Samayaraj</span>
@@ -74,7 +76,7 @@
 
       <!-- Buttons -->
       <div class="home-animate opacity-0 delay-4 flex gap-4 justify-center md:justify-start">
-        <a href="./documents/Samayaraj_Resume_.pdf"
+        <a href="./documents/Samayaraj_Resume_.pdf" target="_blank"
           class="px-5 py-2 border border-cyan-500 hover:bg-cyan-600 hover:text-white text-cyan-400 rounded-full shadow transition">
           Download CV
         </a>
@@ -86,14 +88,15 @@
 
       <!-- Social Icons -->
       <div class="home-animate opacity-0 delay-5 flex gap-6 justify-center md:justify-start mt-4 text-2xl">
-        <a href="https://github.com/samayarajwebdeveloper" target="_blank" class="hover:text-cyan-400 transition hover:scale-105">
+        <a href="https://github.com/samayarajwebdeveloper" target="_blank"
+          class="hover:text-cyan-400 transition hover:scale-105">
           <i data-lucide="github" class="w-6 h-6"></i>
         </a>
         <a href="https://www.linkedin.com/in/samayaraj-m-468b9424b" target="_blank"
           class="hover:text-cyan-400 transition hover:scale-105">
           <i data-lucide="linkedin" class="w-6 h-6"></i>
         </a>
-        <a href="mailto:johnwilson72021@gmail.com" class="hover:text-cyan-400 transition hover:scale-105">
+        <a href="mailto:samayaraj2003@gmail.com" class="hover:text-cyan-400 transition hover:scale-105">
           <i data-lucide="mail" class="w-6 h-6"></i>
         </a>
       </div>
@@ -194,42 +197,46 @@
           <div class="space-y-6">
 
             <!-- Certificate 1 -->
-            <div class="bg-gray-800 p-4 rounded-lg shadow flex justify-between items-center about-animate"
+            <div
+              class="bg-gray-800 p-4 rounded-lg shadow flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 about-animate"
               data-aos="fade-left">
               <div>
-                <p class="text-white font-medium">Android App Development Workshop</p>
+                <p class="text-white font-medium">Android App Development and Flutter Workshop</p>
                 <p class="text-sm text-gray-400">Accent Tech Soft</p>
               </div>
               <a href="./documents/Android App Development and Flutter.pdf" target="_blank"
-                class="border border-cyan-500 text-cyan-400 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:text-white">
+                class="border border-cyan-500 text-cyan-400 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:text-white text-center w-full sm:w-auto sm:min-w-[160px]">
                 View Certificate
               </a>
             </div>
-
             <!-- Certificate 2 -->
-            <div class="bg-gray-800 p-4 rounded-lg shadow flex justify-between items-center about-animate"
-              data-aos="fade-left" data-aos-delay="100">
+            <div
+              class="bg-gray-800 p-4 rounded-lg shadow flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 about-animate"
+              data-aos="fade-left" data-aos-delay="50">
               <div>
                 <p class="text-white font-medium">Ethical Hacking</p>
                 <p class="text-sm text-gray-400">Accent Tech Soft</p>
               </div>
               <a href="./documents/Ethical Hacking.pdf" target="_blank"
-                class="border border-cyan-500 text-cyan-400 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:text-white">
+                class="border border-cyan-500 text-cyan-400 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:text-white text-center w-full sm:w-auto">
                 View Certificate
               </a>
             </div>
+
             <!-- Certificate 3 -->
-            <div class="bg-gray-800 p-4 rounded-lg shadow flex justify-between items-center about-animate"
+            <div
+              class="bg-gray-800 p-4 rounded-lg shadow flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 about-animate"
               data-aos="fade-left" data-aos-delay="100">
               <div>
                 <p class="text-white font-medium">NPTEL CERTIFICATION</p>
-                <p class="text-sm text-gray-400">Introduction to Graphic Design</p>
+                <p class="text-sm text-gray-400">Introduction to Graphic Designer</p>
               </div>
               <a href="./documents/Introduction to Graphic Design.pdf" target="_blank"
-                class="border border-cyan-500 text-cyan-400 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:text-white">
+                class="border border-cyan-500 text-cyan-400 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:text-white text-center w-full sm:w-auto">
                 View Certificate
               </a>
             </div>
+
 
           </div>
         </div>
@@ -360,7 +367,8 @@
 
           <!-- 🔗 Social Icons -->
           <div class="flex gap-6 mt-4 text-2xl">
-            <a href="https://github.com/samayarajwebdeveloper" target="_blank" class="hover:text-cyan-400 transition hover:scale-105">
+            <a href="https://github.com/samayarajwebdeveloper" target="_blank"
+              class="hover:text-cyan-400 transition hover:scale-105">
               <i data-lucide="github" class="w-6 h-6"></i>
             </a>
             <a href="https://www.linkedin.com/in/samayaraj-m-468b9424b" target="_blank"
@@ -375,9 +383,9 @@
 
 
         <!-- Message Form -->
-        <form id="contact-form" action="https://api.web3forms.com/submit"  method="POST"
-          class="space-y-4 md:w-3/4 mx-auto bg-gray-900 p-6 rounded-2xl shadow-xl hover:shadow-[0_0_30px_2px_#22d3ee]" data-aos="fade-left"
-          data-aos-delay="300">
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST"
+          class="space-y-4 md:w-3/4 mx-auto bg-gray-900 p-6 rounded-2xl shadow-xl hover:shadow-[0_0_30px_2px_#22d3ee]"
+          data-aos="fade-left" data-aos-delay="300">
           <input type="hidden" name="access_key" value="e96f9b22-d4ca-4441-af58-438e090f1421">
 
           <input type="text" name="name" placeholder="Your Name" required
@@ -391,7 +399,7 @@
 
           <button type="submit"
             class="w-full py-3 rounded-lg bg-cyan-500 hover:bg-cyan-600 transition duration-300 text-white font-bold shadow-md hover:shadow-lg">
-             Send Message
+            Send Message
           </button>
 
           <!-- Success message (hidden initially) -->
@@ -427,6 +435,7 @@
     });
   </script>
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
   <script src="script.js"></script>
 </body>
 
