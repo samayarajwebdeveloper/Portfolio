@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#22d3ee" />
+  <link rel="icon" href="/assets/icon1.png" type="image/png">
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- AOS Library for Scroll Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+  
+
+
+</head>
+
+<body class="bg-gradient-to-tr from-gray-900 to-gray-800 text-white">
+
+  <header class="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-md shadow-lg ">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+
+      <!-- Logo -->
+      <div class="text-2xl font-bold text-white text-gradient text-4xl">Samayaraj</div>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex gap-8 text-lg font-medium ">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Mobile Hamburger -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-3xl text-white">&#9776;</button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden flex-col gap-4 px-6 pb-4">
+      <a href="#home" class="nav-link block">Home</a>
+      <a href="#about" class="nav-link block">About</a>
+      <a href="#projects" class="nav-link block">Projects</a>
+      <a href="#contact" class="nav-link block">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home"
+    class="min-h-screen flex flex-col md:flex-row items-center justify-center gap-10 px-6 py-20 bg-gradient-to-br from-gray-900 to-black text-white">
+
+    <!-- Left Side -->
+    <div class="flex-1 text-center md:text-left space-y-6">
+      <!-- Heading -->
+      <h1 class="home-animate opacity-0 delay-1 text-4xl md:text-6xl font-bold">
+        Hi 👋, I'm <span class="text-white">Samayaraj</span>
+      </h1>
+
+      <!-- Subheading -->
+      <h2 class="home-animate opacity-0 delay-2 text-2xl md:text-3xl font-semibold">
+        <span id="typed-text" class="text-cyan-300"></span>
+      </h2>
+
+      <!-- Description -->
+      <p class="home-animate opacity-0 delay-3 text-lg max-w-xl text-gray-300">
+        Entry-level Web Developer with hands-on experience building responsive and modern web apps using HTML, Tailwind
+        CSS, JavaScript, and PHP.
+      </p>
+
+      <!-- Buttons -->
+      <div class="home-animate opacity-0 delay-4 flex gap-4 justify-center md:justify-start">
+        <a href="./documents/Samayaraj_Resume_.pdf"
+          class="px-5 py-2 border border-cyan-500 hover:bg-cyan-600 hover:text-white text-cyan-400 rounded-full shadow transition">
+          Download CV
+        </a>
+        <a href="#contact"
+          class="px-5 py-2 border border-cyan-500 hover:bg-cyan-500 hover:text-white text-cyan-400 rounded-full transition">
+          Contact Me
+        </a>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="home-animate opacity-0 delay-5 flex gap-6 justify-center md:justify-start mt-4 text-2xl">
+        <a href="https://github.com/samayarajwebdeveloper" target="_blank" class="hover:text-cyan-400 transition hover:scale-105">
+          <i data-lucide="github" class="w-6 h-6"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/samayaraj-m-468b9424b" target="_blank"
+          class="hover:text-cyan-400 transition hover:scale-105">
+          <i data-lucide="linkedin" class="w-6 h-6"></i>
+        </a>
+        <a href="mailto:johnwilson72021@gmail.com" class="hover:text-cyan-400 transition hover:scale-105">
+          <i data-lucide="mail" class="w-6 h-6"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Side Image with Double Cyan Border and Glow on Hover -->
+    <div class="home-animate opacity-0 delay-6 flex-1 flex justify-center md:items-center">
+      <div
+        class="relative group rounded-xl p-[6px] bg-cyan-400 transition-all duration-500 hover:shadow-[0_0_25px_6px_#22d3ee] hover:scale-105">
+        <div class="rounded-xl p-[6px] bg-black">
+          <img src="/assets/images1.jpg" alt="Samayaraj Profile"
+            class="w-60 object-cover rounded-xl border-4 border-cyan-400" />
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-gray-950 text-white py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+
+      <!-- About Heading -->
+      <h2 class="text-4xl font-bold text-cyan-400 mb-10 text-center about-animate" data-aos="fade-up">About Me</h2>
+
+      <!-- About Text -->
+      <div class="text-lg text-gray-300 max-w-3xl mx-auto mb-16 about-animate" data-aos="fade-up" data-aos-delay="200">
+        <p class="leading-relaxed text-center">
+          I'm <span class="text-cyan-400 font-semibold">Samayaraj</span>, a Web Developer and UI/UX enthusiast. I enjoy
+          building responsive, accessible websites with clean code and aesthetic design. I'm passionate about learning
+          and love working on real-time problem-solving web projects.
+        </p>
+      </div>
+
+      <!-- Skills -->
+      <div class="mb-16 about-animate" data-aos="fade-right" data-aos-delay="300">
+        <h3 class="text-2xl font-semibold mb-6 text-cyan-300 ">My Skills</h3>
+        <div class="space-y-6">
+          <div>
+            <label class="block mb-1">HTML</label>
+            <div class="w-full bg-gray-700 rounded-full h-4">
+              <div class="bg-cyan-500 h-4 rounded-full" style="width: 90%"></div>
+            </div>
+          </div>
+          <div>
+            <label class="block mb-1">CSS / Tailwind</label>
+            <div class="w-full bg-gray-700 rounded-full h-4">
+              <div class="bg-cyan-400 h-4 rounded-full" style="width: 85%"></div>
+            </div>
+          </div>
+          <div>
+            <label class="block mb-1">JavaScript</label>
+            <div class="w-full bg-gray-700 rounded-full h-4">
+              <div class="bg-yellow-400 h-4 rounded-full" style="width: 75%"></div>
+            </div>
+          </div>
+          <div>
+            <label class="block mb-1">PHP / Python</label>
+            <div class="w-full bg-gray-700 rounded-full h-4">
+              <div class="bg-green-400 h-4 rounded-full" style="width: 70%"></div>
+            </div>
+          </div>
+          <div>
+            <label class="block mb-1">MySQL</label>
+            <div class="w-full bg-gray-700 rounded-full h-4">
+              <div class="bg-purple-400 h-4 rounded-full" style="width: 80%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education & Certifications Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 about-animate" data-aos="fade-up" data-aos-delay="300">
+
+        <!-- Education Tree -->
+        <div>
+          <h3 class="text-2xl font-semibold mb-6 text-cyan-300">Education</h3>
+          <div class="relative border-l-4 border-cyan-500 pl-8 space-y-10">
+            <div class="relative">
+              <span
+                class="absolute -left-[18px] top-2 w-4 h-4 bg-cyan-500 rounded-full z-10 border-2 border-white"></span>
+              <h4 class="text-xl font-semibold">MCA - KIT-Kalaignarkarunanidhi Institute Of Technology Coimbatore</h4>
+              <p class="text-sm text-gray-400">2023 - 2025 | CGPA: 7.7/10</p>
+            </div>
+            <div class="relative">
+              <span
+                class="absolute -left-[18px] top-2 w-4 h-4 bg-cyan-500 rounded-full z-10 border-2 border-white"></span>
+              <h4 class="text-xl font-semibold">B.Sc Computer Science - Karpagam Academy Of Higher Education Coimbatore
+              </h4>
+              <p class="text-sm text-gray-400">2020 - 2023 | CGPA: 8.6/10</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications with Button View -->
+        <div>
+          <h3 class="text-2xl font-semibold mb-6 text-cyan-300">Certifications & Workshops</h3>
+          <div class="space-y-6">
+
+            <!-- Certificate 1 -->
+            <div class="bg-gray-800 p-4 rounded-lg shadow flex justify-between items-center about-animate"
+              data-aos="fade-left">
+              <div>
+                <p class="text-white font-medium">Android App Development Workshop</p>
+                <p class="text-sm text-gray-400">Accent Tech Soft</p>
+              </div>
+              <a href="./documents/Android App Development and Flutter.pdf" target="_blank"
+                class="border border-cyan-500 text-cyan-400 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:text-white">
+                View Certificate
+              </a>
+            </div>
+
+            <!-- Certificate 2 -->
+            <div class="bg-gray-800 p-4 rounded-lg shadow flex justify-between items-center about-animate"
+              data-aos="fade-left" data-aos-delay="100">
+              <div>
+                <p class="text-white font-medium">Ethical Hacking</p>
+                <p class="text-sm text-gray-400">Accent Tech Soft</p>
+              </div>
+              <a href="./documents/Ethical Hacking.pdf" target="_blank"
+                class="border border-cyan-500 text-cyan-400 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:text-white">
+                View Certificate
+              </a>
+            </div>
+            <!-- Certificate 3 -->
+            <div class="bg-gray-800 p-4 rounded-lg shadow flex justify-between items-center about-animate"
+              data-aos="fade-left" data-aos-delay="100">
+              <div>
+                <p class="text-white font-medium">NPTEL CERTIFICATION</p>
+                <p class="text-sm text-gray-400">Introduction to Graphic Design</p>
+              </div>
+              <a href="./documents/Introduction to Graphic Design.pdf" target="_blank"
+                class="border border-cyan-500 text-cyan-400 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:text-white">
+                View Certificate
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 px-6 bg-gradient-to-br from-black to-gray-900 text-white">
+    <h2 class="text-4xl font-bold text-center mb-12">My Projects</h2>
+
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Project Card 1 -->
+      <!-- <div
+        class="project-card group relative overflow-hidden rounded-xl shadow-lg transform transition duration-700 hover:scale-105 opacity-100 opacity-0 project-animate">
+        <img src="/assets/images2.jpg" alt="College Student Management System" class="w-full h-52 object-cover">
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-transparent to-cyan-700 opacity-0 group-hover:opacity-90 transition duration-500 flex flex-col items-center justify-center">
+          <h3 class="text-2xl font-bold mb-4 text-white">College Student Management System</h3>
+          <a href="#" target="_blank"
+            class="px-4 py-2 bg-white text-cyan-700 font-semibold rounded-full hover:bg-cyan-100 transition">View
+            Project</a>
+        </div>
+      </div> -->
+
+      <!-- Project Card 2 -->
+      <div
+        class="project-card group relative overflow-hidden rounded-xl shadow-lg transform transition duration-700 hover:scale-105 opacity-0 project-animate ">
+        <img src="/assets/images3.png" alt="Soil And Farming Agent Distribution Web App"
+          class="w-full h-52 object-cover">
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-transparent to-emerald-700 opacity-0 group-hover:opacity-90 transition duration-500 flex flex-col items-center justify-center">
+          <h3 class="text-2xl font-bold mb-4 ml-4 text-white">Soil And Farming Agent Distribution Web App
+          </h3>
+          <a href="#" target="_blank"
+            class="px-4 py-2 bg-white text-emerald-700 font-semibold rounded-full hover:bg-emerald-100 transition">View
+            Project</a>
+        </div>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div
+        class="project-card group relative overflow-hidden rounded-xl shadow-lg transform transition duration-700 hover:scale-105 opacity-0 project-animate">
+        <img src="/assets/images4.png" alt="Request And Approval Of On-Duty Forms Using Web Application"
+          class="w-full h-52 object-fit">
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-transparent to-pink-700 opacity-0 group-hover:opacity-90 transition duration-500 flex flex-col items-center justify-center">
+          <h3 class="text-2xl font-bold mb-4 ml-2 text-white">Request And Approval Of On-Duty Forms Using Web
+            Application
+          </h3>
+          <a href="#" target="_blank"
+            class="px-4 py-2 bg-white text-pink-700 font-semibold rounded-full hover:bg-pink-100 transition">View
+            Project</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Designing Section Title -->
+    <h2 class="text-4xl font-bold text-center my-12 mt-20">My Designing Works</h2>
+
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Designing Project 1 -->
+      <div
+        class="project-card group relative overflow-hidden rounded-xl shadow-lg transform transition duration-700 hover:scale-105 opacity-0 project-animate">
+        <img src="/assets/design1.jpg" alt="Login Page UI" class="w-full h-52 object-cover">
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-transparent to-indigo-700 opacity-0 group-hover:opacity-90 transition duration-500 flex flex-col items-center justify-center">
+          <h3 class="text-2xl font-bold mb-4 text-white">Login Page UI</h3>
+          <a href="#" target="_blank"
+            class="px-4 py-2 bg-white text-indigo-700 font-semibold rounded-full hover:bg-indigo-100 transition">View
+            Design</a>
+        </div>
+      </div>
+
+      <!-- Designing Project 2 -->
+      <div
+        class="project-card group relative overflow-hidden rounded-xl shadow-lg transform transition duration-700 hover:scale-105 opacity-0 project-animate">
+        <img src="/assets/design2.jpg" alt="E-commerce App UI" class="w-full h-52 object-cover">
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-transparent to-yellow-600 opacity-0 group-hover:opacity-90 transition duration-500 flex flex-col items-center justify-center">
+          <h3 class="text-2xl font-bold mb-4 text-white">E-commerce App UI</h3>
+          <a href="#" target="_blank"
+            class="px-4 py-2 bg-white text-yellow-700 font-semibold rounded-full hover:bg-yellow-100 transition">View
+            Design</a>
+        </div>
+      </div>
+
+      <!-- Designing Project 3 -->
+      <div
+        class="project-card group relative overflow-hidden rounded-xl shadow-lg transform transition duration-700 hover:scale-105 opacity-0 project-animate">
+        <img src="/assets/design3.jpg" alt="Portfolio Website UI" class="w-full h-52 object-cover">
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-transparent to-rose-600 opacity-0 group-hover:opacity-90 transition duration-500 flex flex-col items-center justify-center">
+          <h3 class="text-2xl font-bold mb-4 text-white">Portfolio Website UI</h3>
+          <a href="#" target="_blank"
+            class="px-4 py-2 bg-white text-rose-700 font-semibold rounded-full hover:bg-rose-100 transition">View
+            Design</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gradient-to-br from-black to-gray-900 text-white py-20 px-6">
+    <div class="max-w-5xl mx-auto" data-aos="fade-up">
+      <h2 class="text-4xl font-bold text-center mb-12 text-cyan-400">Contact Me</h2>
+
+      <!-- Contact Info -->
+      <div class="flex flex-col md:flex-row justify-between gap-10 mb-16 text-lg">
+
+        <!-- 🟦 Left Contact Info Block with Cyan Border -->
+        <div
+          class="space-y-4 md:w-1/2 border-2 border-cyan-500 rounded-xl p-6 hover:shadow-[0_0_30px_2px_#22d3ee] transition duration-500"
+          data-aos="fade-right" data-aos-delay="200">
+
+          <!-- ✨ Unique Intro Text -->
+          <div class="space-y-2 text-gray-300">
+
+            <p>I'm enthusiastic about bringing creative web solutions to life.</p>
+            <p>With a strong foundation in front-end development and UI/UX design, I'm ready to contribute to your
+              company's goals.</p>
+            <p>Let's collaborate and build something amazing together.</p>
+
+          </div>
+
+          <!-- 📩 Contact Details -->
+          <p class="mt-6"><strong>Email:</strong> samayaraj2003@gmail.com</p>
+          <p><strong>Phone:</strong> +91 9786088632</p>
+
+          <!-- 🔗 Social Icons -->
+          <div class="flex gap-6 mt-4 text-2xl">
+            <a href="https://github.com/samayarajwebdeveloper" target="_blank" class="hover:text-cyan-400 transition hover:scale-105">
+              <i data-lucide="github" class="w-6 h-6"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/samayaraj-m-468b9424b" target="_blank"
+              class="hover:text-cyan-400 transition hover:scale-105">
+              <i data-lucide="linkedin" class="w-6 h-6"></i>
+            </a>
+            <a href="mailto:samayaraj2003@gmail.com" class="hover:text-cyan-400 transition hover:scale-105">
+              <i data-lucide="mail" class="w-6 h-6"></i>
+            </a>
+          </div>
+        </div>
+
+
+        <!-- Message Form -->
+        <form id="contact-form" action="https://api.web3forms.com/submit"  method="POST"
+          class="space-y-4 md:w-3/4 mx-auto bg-gray-900 p-6 rounded-2xl shadow-xl hover:shadow-[0_0_30px_2px_#22d3ee]" data-aos="fade-left"
+          data-aos-delay="300">
+          <input type="hidden" name="access_key" value="e96f9b22-d4ca-4441-af58-438e090f1421">
+
+          <input type="text" name="name" placeholder="Your Name" required
+            class="w-full p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400" />
+
+          <input type="email" name="email" placeholder="Your Email" required
+            class="w-full p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400" />
+
+          <textarea name="message" placeholder="Your Message" rows="5" required
+            class="w-full p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400"></textarea>
+
+          <button type="submit"
+            class="w-full py-3 rounded-lg bg-cyan-500 hover:bg-cyan-600 transition duration-300 text-white font-bold shadow-md hover:shadow-lg">
+             Send Message
+          </button>
+
+          <!-- Success message (hidden initially) -->
+          <div id="form-success" class="text-green-400 font-medium mt-4 hidden">✔️ Message sent successfully!</div>
+        </form>
+      </div>
+
+      <!-- Footer -->
+      <div class="text-center text-gray-400 text-sm pt-10 border-t border-gray-700" data-aos="fade-up">
+        &copy; 2025 Samayaraj. Crafted with 💙 and Passion.
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <script>lucide.createIcons();</script>
+  <!-- AOS Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- AOS Configuration -->
+  <script>
+    AOS.init({
+      once: false,          // ensures animation works every time
+      duration: 1000,       // animation speed
+      easing: 'ease-in-out',
+      mirror: true,         // triggers on scroll up too
+    });
+  </script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
